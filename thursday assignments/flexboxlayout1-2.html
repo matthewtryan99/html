@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Box Layout </title>
+
+    <style>
+
+        body{
+            margin:0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .flexContRow{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            align-items: stretch;
+        }
+
+        .flexContRow{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+        .black{
+            background-color: black;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .flex1{
+            /* display: flex; */
+            flex: 1;
+        }
+
+        .flex2{
+            flex: 2;
+        }
+
+        .flex3{
+            flex: 3;
+        }
+
+        .flex4{
+            flex: 4;
+        }
+
+        .flex5{
+            flex: 5;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="flex1 red">header</div>
+        <div class="flex5 flexContRow">
+            <div class="black flex1">left</div>
+            <div class="blue flex1">right</div>
+        </div>
+        <div class="yellow flex1">footer</div>
+    </div>
+</body>
+</html>
